@@ -292,13 +292,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476949669}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.08687583, y: -0.9051079, z: 0.22426125, w: 0.35062677}
+  m_LocalPosition: {x: 10.46, y: 8.01, z: 18.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 27.832, y: -137.649, z: 0}
 --- !u!1001 &6878840619418837111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -356,6 +356,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ae1784ca1286ab46b2e101b29411dbd, type: 3}
+--- !u!1 &6878840619418837112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2961535385438453308, guid: 4ae1784ca1286ab46b2e101b29411dbd, type: 3}
+  m_PrefabInstance: {fileID: 6878840619418837111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6878840619418837113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878840619418837112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24b8fed8f26f1f4e8148895fd38f3e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: '!BRUM BRUM!'
+  name: Coche
+  numberWheels: 4
+  hasSirena: 0
+  isOn: 0
 --- !u!1001 &8460548160266702401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -413,3 +435,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77801d11ca48f3843aeb011c5a68823d, type: 3}
+--- !u!1 &8460548160266702402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8234808174506976284, guid: 77801d11ca48f3843aeb011c5a68823d, type: 3}
+  m_PrefabInstance: {fileID: 8460548160266702401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8460548160266702403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8460548160266702402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24b8fed8f26f1f4e8148895fd38f3e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: "\xA1NINO NINO!"
+  name: Ambulancia
+  numberWheels: 4
+  hasSirena: 1
+  isOn: 0
