@@ -377,7 +377,8 @@ MonoBehaviour:
   name: Coche
   numberWheels: 4
   hasSirena: 0
-  isOn: 0
+  isOn: 1
+  gasoline: 0
 --- !u!1001 &8460548160266702401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -456,4 +457,5 @@ MonoBehaviour:
   name: Ambulancia
   numberWheels: 4
   hasSirena: 1
-  isOn: 0
+  isOn: 1
+  gasoline: 0

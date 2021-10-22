@@ -157,9 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 5
   y: 5
-  a: 5
-  b: 2
-  isRaining: 0
+  playerAge: 35
 --- !u!65 &89944526
 BoxCollider:
   m_ObjectHideFlags: 0
