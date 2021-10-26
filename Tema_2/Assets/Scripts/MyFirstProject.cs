@@ -22,16 +22,23 @@ public class MyFirstProject : MonoBehaviour
 
     //public Vector3 myPosition;
 
-    public string hello;
+    // public string hello;
+
+    public int number1;
+    public int number2;
 
 
     void Start()
     {
-        HelloWorld();
-        /*hello = GetHello();
-        Debug.Log(hello);*/ 
+        Debug.Log(operation(number1,number2));
+        
 
-        Debug.Log(GetHello());
+        //Como llamar a una función 
+        /* HelloWorld();
+         /*hello = GetHello();
+         Debug.Log(hello); 
+
+         Debug.Log(GetHello());*/
 
         /*
         myPosition = new Vector3(0,8,0);
@@ -104,64 +111,129 @@ public class MyFirstProject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(transform.position);
+        //Como mostrar una transformación
+        // Debug.Log(transform.position);
 
-       /*if(Input.GetKeyDown(KeyCode.D))
-        {
-            transform.position += Vector3.right;
-        }
+        //orden de como se ejecuta una acción a un boton
+        /*if(Input.GetKey(KeyCode.D))
+         {
+             transform.position += Vector3.right;
+         }
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            transform.position += Vector3.left;
-        }
+         if (Input.GetKeyDown(KeyCode.A))
+         {
+             transform.position += Vector3.left;
+         }
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            transform.position += Vector3.up;
-        }
+         if (Input.GetKeyDown(KeyCode.W))
+         {
+             transform.position += Vector3.up;
+         }
 
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            transform.position += Vector3.down;
-        }
+         if (Input.GetKeyDown(KeyCode.S))
+         {
+             transform.position += Vector3.down;
+         }
 
-        if(Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            transform.rotation *= Quaternion.Euler(0, 10, 0);
-        }
+         if(Input.GetKeyDown(KeyCode.RightArrow))
+         {
+             transform.rotation *= Quaternion.Euler(0, 10, 0);
+         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            transform.rotation *= Quaternion.Euler(0,-10, 0);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            transform.rotation *= Quaternion.Euler(10, 0, 0);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            transform.rotation *= Quaternion.Euler(-14, 0, 0);
-        }
+         if (Input.GetKeyDown(KeyCode.LeftArrow))
+         {
+             transform.rotation *= Quaternion.Euler(0,-10, 0);
+         }
 
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            transform.localScale += Vector3.right;
-        }*/
+         if (Input.GetKeyDown(KeyCode.UpArrow))
+         {
+             transform.rotation *= Quaternion.Euler(10, 0, 0);
+         }
+
+         if (Input.GetKeyDown(KeyCode.DownArrow))
+         {
+             transform.rotation *= Quaternion.Euler(-14, 0, 0);
+         }
+
+         if(Input.GetKeyDown(KeyCode.R))
+         {
+             transform.localScale += Vector3.right;
+         }*/
+        //Llamado de la función de movimiento 
+        MovementToDirection(KeyCode.D, Vector3.right);
+        MovementToDirection(KeyCode.A, Vector3.left);
+        MovementToDirection(KeyCode.S, Vector3.back);
+        MovementToDirection(KeyCode.W, Vector3.forward);
+        MovementToDirection(KeyCode.Q, Vector3.up);
+        MovementToDirection(KeyCode.E, Vector3.down);
+
+        //Llamado de la función de escaldo en eje x
+        MovementToScale(KeyCode.X, Vector3.right);
+        MovementToScale(KeyCode.V, Vector3.left);
+
+        //Llamado de la función de escalado en el eje z
+        MovementToScale(KeyCode.Z, Vector3.forward);
+        MovementToScale(KeyCode.B, Vector3.back);
+
+        //Llamado de la función de escaldo en el eje y
+        MovementToScale(KeyCode.Y, Vector3.up);
+        MovementToScale(KeyCode.U, Vector3.down);
+
+        //Llamado de la función de rotación en el eje x
+        MovementToRotation(KeyCode.UpArrow, new Vector3(0, 0, 10));
 
 
 
     }
 
-    public void HelloWorld()
+    //Como se hace una función sin respuesta
+    /* public void HelloWorld()
+     {
+         Debug.Log("¡Hola, Mundo!");
+     }
+    //Función con un string
+     public string GetHello()
+     {
+         return "Hello";
+
+     }*/
+
+    //Función del movimineto 
+    public void MovementToDirection(KeyCode key, Vector3 direction)
     {
-        Debug.Log("¡Hola, Mundo!");
+        if (Input.GetKeyDown(key))
+        {
+            transform.position += direction;
+
+        }
+    }
+    //Función de escalado 
+    public void MovementToScale(KeyCode key, Vector3 sacale)
+    {
+        if (Input.GetKeyDown(key))
+        {
+            transform.localScale += sacale;
+        }
+
+    }
+    //Función de rotación
+    public void MovementToRotation(KeyCode key, Vector3 rotation)
+
+    {
+        if (Input.GetKeyDown(key))
+        {
+            transform.rotation *= Quaternion.Euler(rotation);
+        }
+
     }
 
-    public string GetHello()
+    //Función que calcula
+    public int operation(int x, int y)
     {
-        return "Hello";
+        int result = x * y;
+        Debug.Log($"{x} * {y} = {result}");
+        return result; 
     }
+
+
 }

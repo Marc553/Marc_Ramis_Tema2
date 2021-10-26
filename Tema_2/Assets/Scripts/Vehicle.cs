@@ -77,12 +77,12 @@ public class Vehicle : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.W))
             {
-                transform.position += Vector3.up;
+                transform.position += Vector3.forward;
             }
 
             if (Input.GetKeyDown(KeyCode.S))
             {
-                transform.position += Vector3.down;
+                transform.position += Vector3.back;
             }
         }
     }

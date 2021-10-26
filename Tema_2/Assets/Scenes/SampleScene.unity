@@ -155,7 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e92111ef7f8e104e827c8a5b5788612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPosition: {x: 5, y: 0, z: 9}
+  number1: 16
+  number2: 15
 --- !u!65 &89944526
 BoxCollider:
   m_ObjectHideFlags: 0
