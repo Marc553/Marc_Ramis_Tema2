@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
-    // Variable que gurda el sonido del vehiculo.
+    /* Variable que gurda el sonido del vehiculo.
     [SerializeField] private string sound = "!BRUM BRUM!";
     [SerializeField] private string name = "Coche";
     [SerializeField] private int numberWheels = 4;
@@ -14,7 +14,7 @@ public class Vehicle : MonoBehaviour
     [SerializeField] private bool isOn = true;
     //Comprueba si esta en marcha
     [SerializeField] private float gasoline;
-    //Cantidad de gasolina
+    //Cantidad de gasolina*/
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +40,7 @@ public class Vehicle : MonoBehaviour
         {
             Debug.Log($"{name} no está en marcha.");
 
-        }*/
+        }
 
         if (gasoline < 10 && isOn == true)
         {
@@ -57,13 +57,13 @@ public class Vehicle : MonoBehaviour
         }else
         {
             Debug.Log($"{name} no esta en marcha.");
-        }
+        }*/
 
 
     }
     // Update is called once per frame
     void Update()
-    { if (isOn)
+    { /*if (isOn)
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
@@ -84,6 +84,6 @@ public class Vehicle : MonoBehaviour
             {
                 transform.position += Vector3.back;
             }
-        }
+        }*/
     }
 }
