@@ -56,7 +56,8 @@
     <Compile Include="Assets\Scripts\MyFirstProject.cs" />
     <Compile Include="Assets\Scripts\bisisesto.cs" />
     <Compile Include="Assets\Scripts\Vehicle.cs" />
-    <Compile Include="Assets\Scripts\ParImpar.cs" />
+    <Compile Include="Assets\Scripts\RandomNumber.cs" />
+    <Compile Include="Assets\Scripts\HotPotato.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
