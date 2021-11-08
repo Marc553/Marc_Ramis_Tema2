@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d911dcd56403a4583efa54698cfb7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorMat: {r: 0.4433962, g: 0.16941082, b: 0.16941082, a: 1}
 --- !u!135 &1506503114
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -280,7 +281,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 303d6607c93995f41a5cbfada70b5721, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
